@@ -1,0 +1,357 @@
+[
+  {
+    "section": "Deer hunting seasons",
+    "season": "Winter Deer Season",
+    "zone": "Zone 13 & 14 only",
+    "date_str": "Jan. 1 \u2013 Feb. 14, 2026",
+    "dates": [
+      [
+        "2026-01-01",
+        "2026-02-14"
+      ]
+    ],
+    "category": "hunting"
+  },
+  {
+    "section": "Deer hunting seasons",
+    "season": "Early Deer Season",
+    "zone": "Zone 13 & 14 only",
+    "date_str": "Sept. 21 \u2013 Oct. 1, 2026",
+    "dates": [
+      [
+        "2026-09-21",
+        "2026-10-01"
+      ]
+    ],
+    "category": "hunting"
+  },
+  {
+    "section": "Deer hunting seasons",
+    "season": "Archery Deer Season",
+    "zone": "Zone 1-14",
+    "date_str": "Oct. 5 \u2013 Nov. 28, 2026",
+    "dates": [
+      [
+        "2026-10-05",
+        "2026-11-28"
+      ]
+    ],
+    "category": "hunting"
+  },
+  {
+    "section": "Deer hunting seasons",
+    "season": "Paraplegic Hunt",
+    "zone": "get hunt details",
+    "date_str": "Oct. 29\u201331, 2026",
+    "dates": [
+      [
+        "2026-10-29",
+        "2026-10-31"
+      ]
+    ],
+    "category": "hunting"
+  },
+  {
+    "section": "Deer hunting seasons",
+    "season": "Shotgun Deer Season",
+    "zone": "Zone 1-14",
+    "date_str": "Nov. 30 \u2013 Dec. 12, 2026",
+    "dates": [
+      [
+        "2026-11-30",
+        "2026-12-12"
+      ]
+    ],
+    "category": "hunting"
+  },
+  {
+    "section": "Deer hunting seasons",
+    "season": "Primitive Firearms Deer Season",
+    "zone": "Zone 1-14",
+    "date_str": "Dec. 14\u201331",
+    "dates": [
+      [
+        "2026-12-14",
+        "2026-12-31"
+      ]
+    ],
+    "category": "hunting"
+  },
+  {
+    "section": "Other hunting seasons",
+    "season": "Black bear",
+    "zone": "Zones 1-14",
+    "date_str": "Sept. 7 \u2013 Dec. 12, 2026",
+    "dates": [
+      [
+        "2026-09-07",
+        "2026-12-12"
+      ]
+    ],
+    "category": "hunting"
+  },
+  {
+    "section": "Other hunting seasons",
+    "season": "Wild turkey",
+    "zone": "Zones 1-13",
+    "date_str": "April 27 \u2013 May 23, 2026 Oct. 5 \u2013 Nov. 28, 2026",
+    "dates": [
+      [
+        "2026-04-27",
+        "2026-05-23"
+      ],
+      [
+        "2026-10-05",
+        "2026-11-28"
+      ]
+    ],
+    "category": "hunting"
+  },
+  {
+    "section": "Other hunting seasons",
+    "season": "Pheasant *",
+    "zone": "Zones 1-14",
+    "date_str": "Oct. 17 \u2013 Dec. 31, 2026",
+    "dates": [
+      [
+        "2026-10-17",
+        "2026-12-31"
+      ]
+    ],
+    "category": "hunting"
+  },
+  {
+    "section": "Other hunting seasons",
+    "season": "Quail *",
+    "zone": "Zones 1-14",
+    "date_str": "Oct. 17 \u2013 Dec. 31, 2026",
+    "dates": [
+      [
+        "2026-10-17",
+        "2026-12-31"
+      ]
+    ],
+    "category": "hunting"
+  },
+  {
+    "section": "Other hunting seasons",
+    "season": "Ruffed grouse",
+    "zone": "Zones 1-14",
+    "date_str": "Oct. 17 \u2013 Nov. 28, 2026",
+    "dates": [
+      [
+        "2026-10-17",
+        "2026-11-28"
+      ]
+    ],
+    "category": "hunting"
+  },
+  {
+    "section": "Other hunting seasons",
+    "season": "Crow *",
+    "zone": "Zones 1-14",
+    "date_str": "Jan. 1, 2026 \u2013 Apr. 10, 2026 (Mon, Fri, Sat only) July 1, 2026 \u2013 Apr. 10, 2027 (Mon, Fri, Sat only)",
+    "dates": [
+      [
+        "2026-01-01",
+        "2026-04-10"
+      ],
+      [
+        "2026-07-01",
+        "2027-04-10"
+      ]
+    ],
+    "category": "hunting"
+  },
+  {
+    "section": "Other hunting seasons",
+    "season": "Bobcat *",
+    "zone": "Zones 1-8",
+    "date_str": "Jan. 1 \u2013 Mar. 7, 2026 Dec. 21, 2026 \u2013Mar. 8, 2027",
+    "dates": [
+      [
+        "2026-01-01",
+        "2026-03-07"
+      ],
+      [
+        "2026-12-21",
+        "2027-03-08"
+      ]
+    ],
+    "category": "furbearer"
+  },
+  {
+    "section": "Other hunting seasons",
+    "season": "Coyote",
+    "zone": "Zones 1-14",
+    "date_str": "Jan. 1, 2026 \u2013 Mar. 7, 2026 Oct. 17, 2026 \u2013 Mar. 8, 2027",
+    "dates": [
+      [
+        "2026-01-01",
+        "2026-03-07"
+      ],
+      [
+        "2026-10-17",
+        "2027-03-08"
+      ]
+    ],
+    "category": "furbearer"
+  },
+  {
+    "section": "Other hunting seasons",
+    "season": "Cottontail rabbit *",
+    "zone": "Zones 1-14",
+    "date_str": "Jan. 1, 2026 \u2013 Feb. 28, 2026 Oct. 17, 2026 \u2013 Feb. 27, 2027",
+    "dates": [
+      [
+        "2026-01-01",
+        "2026-02-28"
+      ],
+      [
+        "2026-10-17",
+        "2027-02-27"
+      ]
+    ],
+    "category": "furbearer"
+  },
+  {
+    "section": "Other hunting seasons",
+    "season": "Fox (red or gray) *",
+    "zone": "Zones 1-14",
+    "date_str": "Jan. 1, 2026 \u2013 Feb. 28, 2026 Nov. 2, 2026 \u2013 Feb. 27, 2027",
+    "dates": [
+      [
+        "2026-01-01",
+        "2026-02-28"
+      ],
+      [
+        "2026-11-02",
+        "2027-02-27"
+      ]
+    ],
+    "category": "furbearer"
+  },
+  {
+    "section": "Other hunting seasons",
+    "season": "Gray squirrel *",
+    "zone": "Zones 1-14",
+    "date_str": "Jan. 1, 2026 \u2013 Feb. 28, 2026 Sept. 2, 2026 \u2013 Feb. 27, 2027",
+    "dates": [
+      [
+        "2026-01-01",
+        "2026-02-28"
+      ],
+      [
+        "2026-09-02",
+        "2027-02-27"
+      ]
+    ],
+    "category": "furbearer"
+  },
+  {
+    "section": "Other hunting seasons",
+    "season": "Opossum *",
+    "zone": "Zones 1-14",
+    "date_str": "Jan. 1\u201331, 2026 Oct. 1, 2026 \u2013 Jan. 30, 2027",
+    "dates": [
+      [
+        "2026-01-01",
+        "2026-01-31"
+      ],
+      [
+        "2026-10-01",
+        "2027-01-30"
+      ]
+    ],
+    "category": "furbearer"
+  },
+  {
+    "section": "Other hunting seasons",
+    "season": "Raccoon *",
+    "zone": "Zones 1-14",
+    "date_str": "Jan. 1\u201331, 2026 Oct. 1, 2026 \u2013 Jan. 30, 2027",
+    "dates": [
+      [
+        "2026-01-01",
+        "2026-01-31"
+      ],
+      [
+        "2026-10-01",
+        "2027-01-30"
+      ]
+    ],
+    "category": "furbearer"
+  },
+  {
+    "section": "Other hunting seasons",
+    "season": "Snowshoe hare *",
+    "zone": "Zones 1-14",
+    "date_str": "Jan. 1, 2026\u2013Feb. 28, 2026 Oct. 17, 2026\u2013Feb. 27, 2027",
+    "dates": [
+      [
+        "2026-01-01",
+        "2026-02-28"
+      ],
+      [
+        "2026-10-17",
+        "2027-02-27"
+      ]
+    ],
+    "category": "furbearer"
+  },
+  {
+    "section": "Youth hunts",
+    "season": "Youth Deer Hunt",
+    "zone": "Statewide",
+    "date_str": "Oct. 3, 2026",
+    "dates": [
+      [
+        "2026-10-03",
+        "2026-10-03"
+      ]
+    ],
+    "category": "hunting"
+  },
+  {
+    "section": "Youth hunts",
+    "season": "Youth Pheasant Hunt",
+    "zone": "Statewide",
+    "date_str": "Sept. 5, 12, 19 and Oct. 3, 10, 2026",
+    "dates": [
+      [
+        "2026-09-05",
+        "2026-09-05"
+      ],
+      [
+        "2026-09-12",
+        "2026-09-12"
+      ],
+      [
+        "2026-09-19",
+        "2026-09-19"
+      ],
+      [
+        "2026-10-03",
+        "2026-10-03"
+      ],
+      [
+        "2026-10-10",
+        "2026-10-10"
+      ]
+    ],
+    "category": "hunting"
+  },
+  {
+    "section": "Youth hunts",
+    "season": "Youth Turkey Hunt (Zones 1-13)",
+    "zone": "Statewide",
+    "date_str": "April 25, 2026",
+    "dates": [
+      [
+        "2026-04-25",
+        "2026-04-25"
+      ]
+    ],
+    "category": "hunting"
+  }
+]
