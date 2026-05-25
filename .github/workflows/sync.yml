@@ -1,0 +1,32 @@
+name: Sync MA Hunting Calendar
+
+on:
+  schedule:
+    # 1st of each month at 12:00 UTC
+    - cron: '0 12 1 * *'
+  workflow_dispatch: {}   # allow manual trigger from the Actions tab
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Write service account key
+        run: echo '${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}' > /tmp/sa-key.json
+
+      - name: Run sync
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: /tmp/sa-key.json
+          HUNTING_CALENDAR_ID:   ${{ secrets.HUNTING_CALENDAR_ID }}
+          FURBEARER_CALENDAR_ID: ${{ secrets.FURBEARER_CALENDAR_ID }}
+          MIGRATORY_CALENDAR_ID: ${{ secrets.MIGRATORY_CALENDAR_ID }}
+        run: python main.py
