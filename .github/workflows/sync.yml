@@ -29,4 +29,7 @@ jobs:
           HUNTING_CALENDAR_ID:   ${{ secrets.HUNTING_CALENDAR_ID }}
           FURBEARER_CALENDAR_ID: ${{ secrets.FURBEARER_CALENDAR_ID }}
           MIGRATORY_CALENDAR_ID: ${{ secrets.MIGRATORY_CALENDAR_ID }}
+          GMAIL_USER:            ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD:    ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_EMAIL:          ${{ secrets.NOTIFY_EMAIL }}
         run: python main.py

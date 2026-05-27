@@ -9,9 +9,11 @@ import json
 import logging
 import os
 import sys
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
+
+from notify import send_status_email
 
 from google.auth import default as google_auth_default
 from googleapiclient.discovery import build
@@ -128,7 +130,7 @@ def get_existing_events(service, calendar_id: str) -> dict[str, dict]:
     return events
 
 
-def sync_calendar(service, calendar_id: str, rows: list[dict], label: str) -> int:
+def sync_calendar(service, calendar_id: str, rows: list[dict], label: str) -> dict:
     existing = get_existing_events(service, calendar_id)
     logger.info("[%s] %d existing  |  %d source rows", label, len(existing), len(rows))
 
@@ -181,7 +183,7 @@ def sync_calendar(service, calendar_id: str, rows: list[dict], label: str) -> in
         "[%s] created=%d  updated=%d  deleted=%d  errors=%d",
         label, created, updated, deleted, errors,
     )
-    return errors
+    return {"created": created, "updated": updated, "deleted": deleted, "errors": errors}
 
 
 # -- Entry point ---------------------------------------------------------------
@@ -200,12 +202,32 @@ def sync_all() -> int:
     )
 
     service = get_calendar_service()
-    errors  = 0
-    errors += sync_calendar(service, HUNTING_CALENDAR_ID,   hunting_rows,   "Hunting")
-    errors += sync_calendar(service, FURBEARER_CALENDAR_ID, furbearer_rows, "Furbearer")
-    errors += sync_calendar(service, MIGRATORY_CALENDAR_ID, migratory_rows, "Migratory")
+    h = sync_calendar(service, HUNTING_CALENDAR_ID,   hunting_rows,   "Hunting")
+    f = sync_calendar(service, FURBEARER_CALENDAR_ID, furbearer_rows, "Furbearer")
+    m = sync_calendar(service, MIGRATORY_CALENDAR_ID, migratory_rows, "Migratory")
+    errors = h["errors"] + f["errors"] + m["errors"]
 
     logger.info("Sync complete -- total errors: %d", errors)
+
+    def _fmt(s: dict) -> str:
+        return f"created={s['created']}  updated={s['updated']}  deleted={s['deleted']}  errors={s['errors']}"
+
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    status = "ERRORS" if errors else "OK"
+    send_status_email(
+        f"[MA Hunting Calendar] Sync {status} — {now}",
+        "\n".join([
+            "MA Hunting Calendar Sync",
+            now,
+            "",
+            f"  Hunting:    {_fmt(h)}",
+            f"  Furbearer:  {_fmt(f)}",
+            f"  Migratory:  {_fmt(m)}",
+            "",
+            f"Total errors: {errors}",
+        ]),
+    )
+
     return errors
 
 
